@@ -7,6 +7,7 @@ IoT driven ENERGY MANAGEMENT built on CLOUD technologies
 mqtttest.py is the mqtt client for sending data to adafruit.io and controlling the devices connected to it 
 
 EnergyDisaggregation.py is responsible for visualizing disaggregated energy from whole home loads 
+LSTM-based Recurrent Neural Network implemented using tensorflow
 
 Built using GCP services (BigQuery,ML Engine, IoT Core, PubSub, e.t.c)
 
