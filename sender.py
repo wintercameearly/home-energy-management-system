@@ -1,4 +1,4 @@
- Import standard python modules.
+# Import standard python modules.
 import json
 import random
 import sys
@@ -17,10 +17,10 @@ io.setmode(io.BCM)
 ssl_private_key_filepath = '/home/pi/jwtRS256.key'
 ssl_algorithm = 'RS256'
 root_cert_filepath = '/home/pi/roots.pem'
-project_id = 'raspberry-connector'
-gcp_location = 'asia-east1'
-registry_id = 'rasberry-pi-registry'
-device_id = 'raspi-device'
+project_id = ''
+gcp_location = ''
+registry_id = ''
+device_id = ''
 cur_time = datetime.datetime.utcnow()
 _CLIENT_ID = 'projects/{}/locations/{}/registries/{}/devices/{}'.format(project_id, gcp_location, registry_id,
                                                                         device_id)
@@ -54,11 +54,11 @@ from Adafruit_IO import MQTTClient
 # Set to your Adafruit IO key.
 # Remember, your key is a secret,
 # so make sure not to publish it when you publish this code!
-ADAFRUIT_IO_KEY = 'aio_fBwP163pnajwp1A7xWFdpkVbmjHk'
+ADAFRUIT_IO_KEY = ''
 
 # Set to your Adafruit IO username.
 # (go to https://accounts.adafruit.com to find your username)
-ADAFRUIT_IO_USERNAME = 'nifemibam'
+ADAFRUIT_IO_USERNAME = ''
 
 
 # Create a jwt connection for Cloud IoT core
