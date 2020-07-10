@@ -25,7 +25,6 @@ cur_time = datetime.datetime.utcnow()
 _CLIENT_ID = 'projects/{}/locations/{}/registries/{}/devices/{}'.format(project_id, gcp_location, registry_id,
                                                                         device_id)
 _MQTT_TOPIC = '/devices/{}/events'.format(device_id)
-#_MQTT_TOPIC = 'projects/raspberry-connector/topics/data'
 # For serial communication
 serial1 = serial.Serial('/dev/ttyAMA0', 38400)
 
@@ -197,11 +196,6 @@ while True:
     #client.publish('current', current)
     
     cur_power = float(Z[1])
-    #if cur_power == power:
-     #   time.sleep(1)
-      #  continue
-
-    #power = int(round(cur_power))
     power = cur_power
     timestamp = datetime.datetime.today().strftime('%Y-%m-%d %H:%M:%S')
     print(power)
@@ -209,12 +203,10 @@ while True:
     timestamp_list.append(timestamp)
     print(len(power_list))
     if len(power_list) == 20:
-        #payload = '{{"timestamp":{},"power":{}, "device_id":"fy-raspi"}}'.format(timestamp_list,power_list)
         payload = {"timestamp":timestamp_list,"power":power_list,"device_id":"fy-raspi"}
         payload = json.dumps(payload)
         d = datetime.datetime.utcnow()
         d = d.isoformat("T")+"Z"
-        #payload = base64.b64encode(payload)
         sending_info = {"data": payload,
         "attributes": {
         'deviceId': 'raspi-device',
@@ -225,14 +217,9 @@ while True:
         "messageId": "122345677777",
         "publishTime": d
         }
-        # sending_info = {'message':{'attributes':{'deviceId':'raspi-device','deviceNumId':'3332544173922627','deviceRegistryId': 'rasberry-pi-registry','deviceRegistryLocation':'asia-east1','projectId':'raspberry-connector','subFolder':$
-        # sending_info = json.dumps(sending_info).encode('utf-8')
         client1.publish(_MQTT_TOPIC, payload, qos=1)
         print("{}\n".format(sending_info))
         del power_list[:]
         del timestamp_list[:] 
-    #payload = '{{"ts": {},"power": {} }}'.format(int(time.time()), power)
-    #client1.publish(_MQTT_TOPIC, payload, qos=1)
-    #print("{}\n".format(payload))
     time.sleep(3)
-    # client1.loop_stop()
+
