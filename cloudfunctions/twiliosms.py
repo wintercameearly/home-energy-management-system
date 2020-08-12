@@ -45,8 +45,8 @@ def hello_pubsub(event, context):
         message = client.messages \
             .create(
             body=Text,
-            from_='+19093613428',
-            to='+2347068667271'
+            from_='+',
+            to='+'
         )
         print("Messages Sent!")
     last_send_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
