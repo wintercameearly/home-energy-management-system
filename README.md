@@ -6,7 +6,7 @@ This system was built using Cloud Technologies and systems to enable consistent,
 LIVE DEMO : https://www.youtube.com/watch?v=67l0wjL0xx0&t=7s
 
 
-![Flowchart](https://github.com/wintercameearly/undergrad_proj/blob/master/cronos.jpeg)
+![Flowchart](https://github.com/wintercameearly/undergrad_proj/blob/master/withcloudfunctions.jpg)
 
 
 
