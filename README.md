@@ -25,6 +25,8 @@ Both of these are connected to a Raspberry Pi over serial to compute into power 
 
 Adafruit.io Dashboard shows the readings ot the Entire Home Power Usage 
 
+![Dashboard](https://github.com/wintercameearly/undergrad_proj/blob/master/Picture1.png)
+
 GCP recieves readings from RaspberryPi through Cloud IoT core and Pub/Sub
 GCP hosts an RNN-LSTM Model on Cloud AI Platform, adapted from (https://github.com/GoogleCloudPlatform/professional-services/tree/master/examples/e2e-home-appliance-status-monitoring
 ) to carry out Energy Disaggregation.
