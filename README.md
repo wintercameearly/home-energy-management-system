@@ -46,4 +46,5 @@ Also added some features with IFTTT for Voice Control and a diluted form of Dema
 4. gatewayservice : This folder holds the gateway service responsible for calling the deployed Model endpoint, pushing responses to PubSub and storing data in BigQuery.
 
 
-This work is possible very much due to the examples provided by Google , Very Grateful to them !
+This work is possible very much due to the demo's, documentration and examples provided by Google. Check out (https://github.com/GoogleCloudPlatform/professional-services/tree/master/examples/e2e-home-appliance-status-monitoring) for help with deployment of the Model and setup of Cloud Enviroment. Very Grateful to them !.
+I will release a tutorial on how i achieved this soonest.
