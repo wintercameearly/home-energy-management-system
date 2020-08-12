@@ -160,7 +160,7 @@ client.on_message = message
 client1.on_connect = on_connect
 client1.on_publish = on_publish
 
-# Connect to the Adafruit IO server.
+# Connect to the Adafruit IO gatewayservice.
 client.connect()
 
 # Now the program needs to use a client loop function to ensure messages are
