@@ -1,4 +1,4 @@
-# undergrad_proj
+# Cloud Based IoT Energy Management System
 A repository of codes used for my undergrad project, a home energy management system 
 
 IoT driven ENERGY MANAGEMENT built on CLOUD technologies
