@@ -1,5 +1,5 @@
 # Cloud Based IoT Energy Management System
-An Energy Management System built for the purpose of improving Home Enegery Usage Efficiency.
+A Home Energy Management System built for the purpose of improving Home Energy Usage Efficiency.
 
 This system was built using Cloud Technologies and systems to enable consistent, location-independent access to energy information.
 
