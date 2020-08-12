@@ -18,19 +18,20 @@ LIVE DEMO : https://www.youtube.com/watch?v=67l0wjL0xx0&t=7s
 4. Notifications on Energy Usage 
 
 ## Technologies Used
-This work was written in Python
+This work was written in Python.
+
 It utilizes a Current Transformer Clamp and the RPICT3T1 for CURRENT measurement and a ZMPT101B Voltage Transformer with the ESP8266 for Voltage Measurement. 
 
 Both of these are connected to a Raspberry Pi over serial to compute into power and send *almost* Real-Time readings to Google Cloud Platform and adafruit.io
 
-Adafruit.io Dashboard shows the readings ot the Entire Home Power Usage 
+Adafruit.io Dashboard as seen below shows the readings ot the Entire Home Power Usage 
 
 ![Dashboard](https://github.com/wintercameearly/undergrad_proj/blob/master/Picture1.png)
 
 GCP recieves readings from RaspberryPi through Cloud IoT core and Pub/Sub
 GCP hosts an RNN-LSTM Model on Cloud AI Platform, adapted from (https://github.com/GoogleCloudPlatform/professional-services/tree/master/examples/e2e-home-appliance-status-monitoring
-) to carry out Energy Disaggregation.
-Responses from the Model are sent to Adafruit.io via its HTTP API on a Feed , and sent as Notifications to users via the Twillio API with the use of Google Cloud Functions 
+)to carry out Energy Disaggregation.
+Responses from the Model are sent to Adafruit.io via its HTTP API on a Feed (As seen in "Appliance Status" above) , and sent as Notifications to users via the Twillio API with the use of Google Cloud Functions. 
 
 Also added some features with IFTTT for Voice Control and a diluted form of Demand Response
 
