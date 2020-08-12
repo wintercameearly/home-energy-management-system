@@ -1,7 +1,9 @@
 # Cloud Based IoT Energy Management System
-A repository of codes used for my undergrad project, a home energy management system 
+An Energy Management System built for the purpose of improving Home Enegery Usage Efficiency.
+LIVE DEMO : https://www.youtube.com/watch?v=67l0wjL0xx0&t=7s
 
-IoT driven ENERGY MANAGEMENT built on CLOUD technologies
+This system was built, CLoud Technologies and systems to enable consistent, location-independent access to energy information.
+
 
 ![Flowchart](https://github.com/wintercameearly/undergrad_proj/blob/master/cronos.jpeg)
 mqtttest.py is the mqtt client for sending data to adafruit.io and controlling the devices connected to it 
