@@ -3,7 +3,7 @@ A repository of codes used for my undergrad project, a home energy management sy
 
 IoT driven ENERGY MANAGEMENT built on CLOUD technologies
 
-![Flowchart](https://github.com/wintercameearly/undergrad_proj/blob/master/drawio.jpg)
+![Flowchart](https://github.com/wintercameearly/undergrad_proj/blob/master/cronos.jpg)
 mqtttest.py is the mqtt client for sending data to adafruit.io and controlling the devices connected to it 
 
 EnergyDisaggregation.py is responsible for visualizing disaggregated energy from whole home loads 
