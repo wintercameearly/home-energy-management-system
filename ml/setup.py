@@ -17,7 +17,7 @@ from setuptools import setup
 
 
 REQUIRED_PACKAGES = [
-  "tensorflow==1.13.1",
+  "tensorflow==2.3.1",
   "google-cloud-storage==1.13.2",
   "pandas==0.23.4",
   "scikit-learn==0.20.2",
